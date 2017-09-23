@@ -1,10 +1,28 @@
 .bgbody{
-	 background: rgb(44, 48, 73);
+	
 	 overflow: scroll;
 	 text-align: center;
 	 margin: 0;
 	 		transition: 0.5s;
+			    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(44, 48, 73), rgb(16, 16, 16)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(44, 48, 73), rgb(16, 16, 16)); /* For Safari 5.1 to 6.0 */
+    background: -moz-linear-gradient(rgb(44, 48, 73), rgb(16, 16, 16)); /* For Safari 5.1 to 6.0 */
+    background: linear-gradient(rgb(44, 48, 73), rgb(16, 16, 16)); /* For Safari 5.1 to 6.0 */
 }
+#wrapper{
+	color:white;
+background-color:rgb(16, 16, 16);	
+margin-left:17.2%;
+margin-right:17.2%;
+padding-bottom:2%;
+}	
+body{
+
+padding:10px,10px;
+color:white;
+background-color:white;
+}	
 body,hr,h1,h2,h3,p,h4,h5,a,img,tt  {
     -webkit-animation: fadein 0.7s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 0.7s; /* Firefox < 16 */
@@ -49,12 +67,11 @@ body,hr,h1,h2,h3,p,h4,h5,a,img,tt  {
 /*Logo and Navigation Menu*/
 #logo {
 		transition: 0.5s;
- width: 75%;
+ width: 65%;
  image-smoothing: antialiased;
 }
 #logo:hover{
 		transition: 0.5s;
- width: 77%;
  image-smoothing: antialiased;
  
 }
@@ -142,6 +159,7 @@ li.navigationmenu {
     min-width: 176px;
     max-width: 176px;
     display: inline-block;
+	margin-bottom:10;
 }
 
 li.navigationmenu.two{
@@ -154,6 +172,7 @@ li.navigationmenu.two{
 .navigationmenu img{
 	width: 39px;
     float: left;
+	
 }
 
 li.navigationmenu.two img {
@@ -179,6 +198,7 @@ li.navigationmenu.two img {
     max-width: 42%
     display: inline-block;
 	transition: 0.5s;
+	
 }
 }
 li.navigationmenu.two{
@@ -196,7 +216,7 @@ li.navigationmenu.two.man:hover{
 	transition: 0.5s;
 }
 li.navigationmenu.two.dow:hover{
-	background-color: rgb(255,215,20);
+	background-color: orange;
 	padding-top:17px;
 	transition: 0.5s;
 }
@@ -283,8 +303,8 @@ width:50px;
 height:60px;
 position:fixed;		
 background:rgb(255,51,51);
-right:0.5%;
-top:46%;
+right:9%;
+top:0%;
 padding:5px;
 transition: 0.7s;
 }
@@ -292,9 +312,9 @@ transition: 0.7s;
 #register:hover{
 position:fixed;		
 padding:5px;
-padding-right:30px;
+padding-top:30px;
 transition: 0.7s;
-background:white;
+
 }
 
 #support{
@@ -302,8 +322,8 @@ width:50px;
 height:60px;
 position:fixed;		
 background:orange;
-right:0.5%;
-top:55%;
+top:0%;
+right:5%;
 padding:5px;
 transition: 0.7s;
 }
@@ -311,9 +331,9 @@ transition: 0.7s;
 #support:hover{
 position:fixed;		
 padding:5px;
-padding-right:30px;
+padding-top:30px;
 transition: 0.7s;
-background:white;
+
 }
 
 #feedback{
@@ -321,8 +341,8 @@ width:50px;
 height:60px;
 position:fixed;		
 background:rgb(80,206,246);
-right:0.5%;
-top:64%;
+top:0%;
+right:1%;
 padding:5px;
 transition: 0.7s;
 }
@@ -330,9 +350,9 @@ transition: 0.7s;
 #feedback:hover{
 position:fixed;		
 padding:5px;
-padding-right:30px;
+padding-top:30px;
 transition: 0.7s;
-background:white;
+
 }
 #ico{
 width:70%;
@@ -410,7 +430,7 @@ background:rgb(255,51,51);
 #downloads:hover{
 transition: 0.7s;
 color:black;
-background:rgb(232, 192, 0);
+background:red;
 }
 #manual:hover{
 transition: 0.7s;
@@ -423,8 +443,8 @@ color:black;
 background:orange;
 }
 #selected{
-color:black;
-background:black;
+color:rgb(44, 48, 73);
+background:rgb(44, 48, 73);
 }
 		
 /*                     GENERAL                 */
@@ -488,7 +508,7 @@ p{/*MAIN TEXT CONTENT*/
  color:white;
  padding-left:14.0%;
  padding-right:12.5%;
- text-align: justify;
+ text-align: left;
 
  font-size:16pt;
  -webkit-font-smoothing: antialiased;
@@ -511,7 +531,7 @@ pre{/*DISPLAY AS IS*/
 }	
 /*MAIN PAGE CONTENTS*/
 #bgimage{
-width:70%
+width:90%
 }	
 #ssk{
 width:60%
@@ -523,7 +543,7 @@ width:60%
 	color:rgb(230, 0, 0);
 }
 #downloadheader{
-background:rgb(255, 212, 10);
+background:orange;
 
 }
 #manualheader{
