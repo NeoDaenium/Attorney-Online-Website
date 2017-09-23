@@ -3,13 +3,60 @@
 	 overflow: scroll;
 	 text-align: center;
 	 margin: 0;
+	 		transition: 0.5s;
 }
+body,hr,h1,h2,h3,p,h4,h5,a,img,tt  {
+    -webkit-animation: fadein 0.7s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.7s; /* Firefox < 16 */
+        -ms-animation: fadein 0.7s; /* Internet Explorer */
+         -o-animation: fadein 0.7s; /* Opera < 12.1 */
+            animation: fadein 0.7s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/*Animation Test*/
+
+
 /*Originally	 background: rgb(46, 51, 77)*/
 
 /*Logo and Navigation Menu*/
 #logo {
+		transition: 0.5s;
  width: 75%;
  image-smoothing: antialiased;
+}
+#logo:hover{
+		transition: 0.5s;
+ width: 77%;
+ image-smoothing: antialiased;
+ 
 }
 #logo2{
  display:none;
@@ -20,14 +67,13 @@
  color:white;
  border: 3px solid black;
 }
-/*RESPONSIVE FEATURES      */
+/*        RESPONSIVE FEATURES      */
 #more{
     display: none;
 }
 @media screen and (max-width: 360px) {
   .btntext{display:none;}
   .texts{display:none;}
-
 }
 .cent{
  float:center;
@@ -41,6 +87,7 @@ li>a{
 
 .homevideo{
 	max-width: 100%
+	auto-pla
 }
 @media screen and (max-width: 1000px) {
 	.btntext{font-size:16pt;}
@@ -59,6 +106,8 @@ li>a{
  #logo2{display:inline-block;}
 }
 /*RESPONSIVE FEATURES END*/
+
+/* 	Navigation  Bar /Menu  */
 .navfont:hover{
  font-family:'Oswald','Segoe UI';	
  border: 3px solid white;
@@ -70,9 +119,7 @@ li>a{
  border: 3px solid black;
  border: 2px solid;
  background:black;
-
 }
-
 ul#navigation{
     text-align: center;
     margin: 0;
@@ -100,7 +147,7 @@ li.navigationmenu {
 li.navigationmenu.two{
 	background-color: black;
 	border-color: white;
-	min-width: 181px;
+	min-width: 80px;
 	max-width: 181px;
 }
 
@@ -114,7 +161,7 @@ li.navigationmenu.two img {
 	float:left;
 }
 
-@media (max-width:553px){
+@media(max-width:553px){
 	li.navigationmenu {
     float: left;
     background-color: black;
@@ -131,49 +178,58 @@ li.navigationmenu.two img {
 	min-width: 42%;
     max-width: 42%
     display: inline-block;
+	transition: 0.5s;
 }
+}
+li.navigationmenu.two{
+	transition: 0.5s;
 }
 
 li.navigationmenu.two.faq:hover{
 	background-color: rgb(255,51,51);
+	padding-top:17px;
+	transition: 0.5s;
 }
-
 li.navigationmenu.two.man:hover{
 	background-color: rgb(80,206,246);
+	padding-top:17px;
+	transition: 0.5s;
 }
-
 li.navigationmenu.two.dow:hover{
 	background-color: rgb(255,215,20);
+	padding-top:17px;
+	transition: 0.5s;
 }
-
 li.navigationmenu.two.dis:hover{
 	background-color: rgb(204,115,186);
+	padding-top:17px;
+	transition: 0.5s;
 }
-
 li.navigationmenu.two.dev:hover{
 	background-color: rgb(181,230,29);
+	padding-top:17px;
+	transition: 0.5s;
 }
-
 li.navigationmenu:hover{
 border-color:white;
+padding-bottom:15px;
+transition: 0.5s;
 }
-
+li.navigationmenu{
+transition: 0.5s;
+}
 li.navigationmenu.new{
 	background-color: rgb(0, 153, 0);
 }
-
 li.navigationmenu.abo{
 	background-color: rgb(230, 0, 0);
 }
-
 li.navigationmenu.hom{
 	background-color: rgb(0, 162, 232);
 }
-
 li.navigationmenu.com{
 	background-color: rgb(255, 173, 51);
 }
-
 li.navigationmenu.use{
 	background-color: rgb(38, 38, 38);
 }
@@ -211,10 +267,83 @@ font-size:18pt;
  padding-left:15px;
  padding-right:15px;
 }
+.btntext:hover span {
+  padding-right: 25px;
+ 
+}
+
+tt{
+font-family: 'Raleway', sans-serif;		
+ color:black;
+ font-size:8pt;
+ -webkit-font-smoothing: antialiased;
+}
+#register{
+width:50px;
+height:60px;
+position:fixed;		
+background:rgb(255,51,51);
+right:0.5%;
+top:46%;
+padding:5px;
+transition: 0.7s;
+}
+
+#register:hover{
+position:fixed;		
+padding:5px;
+padding-right:30px;
+transition: 0.7s;
+background:white;
+}
+
+#support{
+width:50px;
+height:60px;
+position:fixed;		
+background:orange;
+right:0.5%;
+top:55%;
+padding:5px;
+transition: 0.7s;
+}
+
+#support:hover{
+position:fixed;		
+padding:5px;
+padding-right:30px;
+transition: 0.7s;
+background:white;
+}
+
+#feedback{
+width:50px;
+height:60px;
+position:fixed;		
+background:rgb(80,206,246);
+right:0.5%;
+top:64%;
+padding:5px;
+transition: 0.7s;
+}
+
+#feedback:hover{
+position:fixed;		
+padding:5px;
+padding-right:30px;
+transition: 0.7s;
+background:white;
+}
+#ico{
+width:70%;
+height:70%;
+}	
+
 /*         Navigation Menu sectioning     */
 #home{
 	font-size:22pt;
 	background: rgb(0, 162, 232);
+	transition: 0.7s;
 }
 #home:hover{
 background:rgb(51, 204, 255);
@@ -222,6 +351,7 @@ background:rgb(51, 204, 255);
 #about{
 	 font-size:22pt;
 	background:rgb(230, 0, 0);
+	transition: 0.7s;
 }
 #about:hover{
 background:rgb(255, 77, 77);
@@ -229,6 +359,7 @@ background:rgb(255, 77, 77);
 #community{
 	 font-size:22pt;
 	background:rgb(255, 173, 51);
+	transition: 0.7s;
 }
 #community:hover{
 background:rgb(255, 214, 51);
@@ -236,6 +367,7 @@ background:rgb(255, 214, 51);
 #news{
 	 font-size:22pt;
 	background:rgb(0, 153, 0);
+	transition: 0.7s;
 }
 #news:hover{
 background:rgb(0, 204, 0);
@@ -245,41 +377,54 @@ background:rgb(0, 204, 0);
 	 font-size:22pt;
 	background:rgb(38, 38, 38);
 	font-size:10pt;
+	transition: 0.7s;
 }
 #more{
 	font-size:22pt;
 	background:rgb(38, 38, 38);
+	transition: 0.7s;
 }
 #more:hover{
 background:rgb(166, 166, 166);
 }
 #uselinks:hover{
+transition: 0.7s;
 background:rgb(166, 166, 166);
 }
 /*Bottom navigation*/
 #discord:hover{
+transition: 0.7s;
 color:black;
 background:rgb(204,115,186);
 }
 #development:hover{
+transition: 0.7s;
 color:black;
 background:rgb(181,230,29);
 }
 #faq:hover{
+transition: 0.7s;	
 color:black;
 background:rgb(255,51,51);
 }
 #downloads:hover{
+transition: 0.7s;
 color:black;
-background:rgb(255,215,20);
+background:rgb(232, 192, 0);
 }
 #manual:hover{
+transition: 0.7s;
 color:black;
 background:rgb(80,206,246);
 }
 #dls:hover{
+transition: 0.7s;	
 color:black;
 background:orange;
+}
+#selected{
+color:black;
+background:black;
 }
 		
 /*                     GENERAL                 */
@@ -339,13 +484,13 @@ h4{/*QUESTIONS/INQUIRY TEXT*/
  font-size:16pt;
 }
 p{/*MAIN TEXT CONTENT*/
- font-family: 'Lato', sans-serif;		
+ font-family: 'Raleway', sans-serif;		
  color:white;
- padding-left:12.5%;
+ padding-left:14.0%;
  padding-right:12.5%;
  text-align: justify;
 
- font-size:18pt;
+ font-size:16pt;
  -webkit-font-smoothing: antialiased;
 }
 h5{/*FOOTER TEXTS*/
@@ -356,7 +501,7 @@ h5{/*FOOTER TEXTS*/
 pre{/*DISPLAY AS IS*/
   font-family: 'Lato', sans-serif;		
  color:white;
- padding-left:8.5%;
+ padding-left:14%;
  padding-right:50%;
  word-wrap:true;
  text-align: justify;
@@ -378,7 +523,7 @@ width:60%
 	color:rgb(230, 0, 0);
 }
 #downloadheader{
-background:rgb(255,215,20);
+background:rgb(255, 212, 10);
 
 }
 #manualheader{
